@@ -127,6 +127,7 @@ class BaseCache(object):
         '''Calls self._delete_many to do the real work.
 
         A wrapper function who handles logging and data marshaling.'''
+        raise NotImplementedError('Not finished yet.')
         return self._delete_many(keys, confirm)
 
     def _delete_many(self, keys, confirm=False):
@@ -142,6 +143,7 @@ class BaseCache(object):
         '''Calls self._clear to do the real work.
 
         A wrapper function who handles logging and data marshaling.'''
+        raise NotImplementedError('Not finished yet.')
         return self._clear(confirm)
 
     def _clear(self, confirm=False):
